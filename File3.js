@@ -67,7 +67,7 @@ function testGreater(val){
     }
     
     else if (val == 60) {
-        return "Safe Number pressed"
+        return "Safe Number pressed";
     }
 
     else {
