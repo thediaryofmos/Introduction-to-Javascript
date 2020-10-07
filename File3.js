@@ -28,4 +28,16 @@ function testEqual(val, b){
     }
     return "Equal";
 }
-console.log(testEqual(10, "10"));
+//console.log(testEqual(10, "10"));
+
+//>, < and >=,<= Operators
+function testGreater(val, b){
+    if (val >= b){
+        if (val == b){
+            return "Equal"
+        }
+        return "Greater";
+    }
+    return "Less";
+}
+console.log(testGreater(10, "11"));
