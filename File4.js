@@ -14,4 +14,28 @@ var friends = ourDog["friends"]
 //Acessing object properties with Variables
 var firstName = 1;
 var name = ourDog[firstName]
-console.log(name)
+//UPDATING Object Properties
+ourDog.name = "Happy Duke";
+//console.log(ourDog);
+
+//Adding Object Properties
+ourDog.bark = "Bow-wow";
+ourDog[3] = "NUST";
+
+//Delete Properties from Object
+delete ourDog[3];
+
+
+//Using Objects for look ups
+function lookup(val){
+    var result = " ";
+    var lookup = {
+        "alpha" : "Adams",
+        "Bravo" : "Boston",
+        "Charlie" : "Chicago",
+        "Delta" : "Denvir",
+    };
+    result = lookup[val]
+    return result;
+}
+//console.log(lookup("Bravo"))
