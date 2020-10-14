@@ -39,3 +39,27 @@ function lookup(val){
     return result;
 }
 //console.log(lookup("Bravo"))
+
+//Testing Object for Properties
+function checkObj(checkProp){
+    if (ourDog.hasOwnProperty(checkProp)){
+        return ourDog[checkProp];
+    }
+    else{
+        return "Not Found";
+    }
+}
+//console.log(checkObj("name"));
+
+//Manipulating Complex Objects
+myMusic = [
+    {
+        "artist" : "Atif Aslam",
+        "title" : "Doorie",
+        "release year" : 2007,
+        "formats" : ["CD", "DVD", "LP"],
+        "gold" : true
+
+    },
+]
+console.log(myMusic);
