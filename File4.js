@@ -62,4 +62,40 @@ myMusic = [
 
     },
 ]
-console.log(myMusic);
+//console.log(myMusic);
+
+
+//Acessing Nested Objects
+myLife = {
+    "song" : {
+        "artist" : "Atif Aslam",
+        "title" : "Doorie",
+        "release year" : 2007,
+        "formats" : ["CD", "DVD", "LP"],
+        "gold" : true,
+        "myData": {
+            "name" : "Osama Shahzad",
+            "University" : "NUST",
+        },
+
+    },
+}
+//console.log(myLife.song.myData.name);
+
+
+//Acessing Nested Array
+myLife = [
+    {
+        "artist" : "Atif Aslam",
+        "title" : "Doorie",
+        "release year" : 2007,
+        "formats" : ["CD", "DVD", "LP"],
+        "gold" : true,
+        "myData": {
+            "name" : "Osama Shahzad",
+            "University" : "NUST",
+        },
+
+    },
+]
+console.log(myLife[0].myData.University);
