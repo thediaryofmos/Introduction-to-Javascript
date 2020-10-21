@@ -109,4 +109,10 @@ const S =[2,3,4]
 //S = [3,5,7] //will give an error
 S[0]= 3; S[1] = 5; S[2]=7;  //Assigning like that will not give an error
 
+
 //Prevent Data Mutation
+const Math_Constants = {
+    PI:3.14
+};
+//Math_Constants.PI = 99; // will chang a constant value
+Object.freeze(Math_Constants); //Now the valu will freze and can't be changed.
