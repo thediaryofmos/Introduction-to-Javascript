@@ -101,4 +101,12 @@ cat1 = 4; //This will not give an error, onl re-declaring will
 //while
 // lt is only limitd to th block-scope (i.e if let is initialized inside an if-statement,
 // that variable value will only exist in if-statement)
+const SENTENCE = 3.14; //can't reassign a const, immutabl
 
+
+//MUTATE an array declared with const
+const S =[2,3,4] 
+//S = [3,5,7] //will give an error
+S[0]= 3; S[1] = 5; S[2]=7;  //Assigning like that will not give an error
+
+//Prevent Data Mutation
