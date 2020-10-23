@@ -33,6 +33,29 @@ class SpaceShuttle {
  }
 }
 var Zeus = new SpaceShuttle("Jupiter");
-console.log(Zeus.targetplanet)
+//console.log(Zeus.targetplanet)
 
+
+//Getters and Setters
+
+function makeClass(){
+    class Thermostat{
+        constructor(temp){
+            this._temp = 5/9 *(temp-32);
+        }
+        get temperature(){
+            return this._temp;
+        }
+        set temperature(updatdTemp){
+            this._temp = updatdTemp;
+        }
+    }
+    return Thermostat;
+}
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp = thermos.temperature;
+console.log(temp);
 
